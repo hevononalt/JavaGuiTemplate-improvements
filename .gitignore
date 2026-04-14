@@ -1,0 +1,39 @@
+# Java
+*.class
+*.jar
+*.log
+*.ctxt
+.mtj.tmp/
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.classpath
+.project
+.settings/
+bin/
+build/
+dist/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Dev Containers
+.devcontainer/.devcontainer
+.devcontainer/supervisord-novnc.conf
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# System
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
