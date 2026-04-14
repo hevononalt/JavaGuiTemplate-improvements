@@ -1,0 +1,34 @@
+{    
+  "github.copilot.enable": { "*": false },
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "editor.quickSuggestions": {
+  "other": false,
+  "comments": false,
+  "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.snippetSuggestions": "none",
+  "editor.tabCompletion": "off",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.parameterHints.enabled": false,
+  "emmet.triggerExpansionOnTab": false,
+  "javascript.suggest.enabled": false,
+  "typescript.suggest.enabled": false,
+
+  "code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "java": "cd $dir && java $fileName",
+  },
+  
+  "java.project.referencedLibraries": [
+    "/var/libs/stdlib.jar"
+  ],
+
+  "files.exclude": {
+    "**/.github": true,
+    "**/.devcontainer": true,
+    "**/.vscode": true
+  }
+}

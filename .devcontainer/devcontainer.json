@@ -1,0 +1,56 @@
+{
+  "name": "JavaGui",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "formulahendry.code-runner" 
+      ],
+      "settings": {
+        "github.copilot.enable": { "*": false },
+        "github.copilot.editor.enableAutoCompletions": false,
+        "github.copilot.nextEditSuggestions.enabled": false,
+        "editor.quickSuggestions": {
+          "other": false,
+          "comments": false,
+          "strings": false
+        },
+        "editor.suggestOnTriggerCharacters": false,
+        "editor.inlineSuggest.enabled": false,
+        "editor.wordBasedSuggestions": "off",
+        "editor.snippetSuggestions": "none",
+        "editor.tabCompletion": "off",
+        "editor.acceptSuggestionOnEnter": "off",
+        "editor.parameterHints.enabled": false,
+        "emmet.triggerExpansionOnTab": false,
+        "javascript.suggest.enabled": false,
+        "typescript.suggest.enabled": false
+      }
+    }
+  },
+
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "jdkDistro": "ms",
+      "gradleVersion": "latest",
+      "mavenVersion": "latest",
+      "antVersion": "latest",
+      "groovyVersion": "latest"
+    }
+  },
+  "forwardPorts": [6080],
+  "portsAttributes": {
+    "6080": {
+      "label": "Desktop",
+      "onAutoForward": "openBrowser"
+    },
+    "otherPorts": {
+      "onAutoForward": "ignore"
+    }
+  },
+  "postStartCommand": "supervisord -c /etc/supervisor/conf.d/supervisord-novnc.conf"
+}
