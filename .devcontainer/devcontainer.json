@@ -8,27 +8,7 @@
     "vscode": {
       "extensions": [
         "formulahendry.code-runner" 
-      ],
-      "settings": {
-        "github.copilot.enable": { "*": false },
-        "github.copilot.editor.enableAutoCompletions": false,
-        "github.copilot.nextEditSuggestions.enabled": false,
-        "editor.quickSuggestions": {
-          "other": false,
-          "comments": false,
-          "strings": false
-        },
-        "editor.suggestOnTriggerCharacters": false,
-        "editor.inlineSuggest.enabled": false,
-        "editor.wordBasedSuggestions": "off",
-        "editor.snippetSuggestions": "none",
-        "editor.tabCompletion": "off",
-        "editor.acceptSuggestionOnEnter": "off",
-        "editor.parameterHints.enabled": false,
-        "emmet.triggerExpansionOnTab": false,
-        "javascript.suggest.enabled": false,
-        "typescript.suggest.enabled": false
-      }
+      ]
     }
   },
 
@@ -37,9 +17,7 @@
       "version": "21",
       "jdkDistro": "ms",
       "gradleVersion": "latest",
-      "mavenVersion": "latest",
-      "antVersion": "latest",
-      "groovyVersion": "latest"
+      "mavenVersion": "latest"
     }
   },
   "forwardPorts": [6080],
